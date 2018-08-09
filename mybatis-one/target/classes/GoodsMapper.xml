@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.accp.mybatis.mapper.GoodsMapper">
+
+	<select id="selectAll" resultType="com.accp.mybatis.entity.Goods">
+		
+SELECT `goodsId`,`goodsName`,`goodsType`,`goodsClassId`,`goodsPrice` FROM `goods`
+	</select>
+
+<select id="selectByid" parameterType="int" resultType="com.accp.mybatis.entity.Goods">
+
+SELECT `goodsId`,`goodsName`,`goodsType`,`goodsClassId`,`goodsPrice` FROM `goods` WHERE `goodsId` =#{0}
+</select>
+<!-- useGeneratedKeys:是否自增
+ keyProperty:主键的列-->
+<insert id="insert" parameterType="com.accp.mybatis.entity.Goods"
+useGeneratedKeys="true" keyProperty="goodsId">
+INSERT INTO `goods`(`goodsName`,`goodsType`,`goodsClassId`,`goodsPrice`) VALUES (#{goodsName},#{goodsType},#{goodsClassId},#{goodsPrice});
+</insert>
+
+<delete id="delete" parameterType="com.accp.mybatis.entity.Goods">
+DELETE FROM `goods` WHERE `goodsId`=#{0}
+</delete>
+
+<select id="selectlike" resultType="com.accp.mybatis.entity.Goods">
+SELECT `goodsId`,`goodsName`,`goodsType`,`goodsClassId`,`goodsPrice` FROM `goods` WHERE `goodsName` LIKE #{0};
+</select>
+
+<select id="selectlikeandPrice" resultType="com.accp.mybatis.entity.Goods">
+SELECT `goodsId`,`goodsName`,`goodsType`,`goodsClassId`,`goodsPrice` FROM `goods` WHERE `goodsName` LIKE #{goodsName} AND `goodsPrice` > #{goodsPrice};
+</select>
+
+<update id="update" parameterType="com.accp.mybatis.entity.Goods"
+useGeneratedKeys="true" keyProperty="goodsId">
+UPDATE `goods` SET `goodsName`=#{goodsName},`goodsType`=#{goodsType},`goodsClassId`=#{goodsClassId},`goodsPrice`=#{goodsPrice} where goodsId =#{goodsId} ;
+</update>
+</mapper>
