@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+	<tr>
+	<th>单号</th>
+	<th>名称</th>
+	<th>型号</th>
+	<th>价格</th>
+	</tr>
+	<tr th:each="goods,index:${list}">
+		<td th:text="${goods.goodsId}">1</th>
+		<td th:text="${goods.goodsName}">1</td>
+		<td th:text="${goods.goodsType}">2</td>
+		<td th:text="${goods.goodsPrice}">3</td>
+	</tr>
+</table>
+</body>
+</html>
