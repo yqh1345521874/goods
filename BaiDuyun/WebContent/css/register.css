@@ -1,0 +1,140 @@
+.flex{
+	display: flex; 
+}
+.left-x{
+	border-left:1px solid silver;
+	height:30px; 
+	margin-top:10px;
+	margin-left:10px;
+}
+.register-text h4{
+	 line-height:35px;
+	 color: #666666;
+	 margin-left:10px;
+	 font-family: "微软雅黑";
+ 
+}
+.con-width{ 
+}
+.login-btn{
+	color:#666;
+	width:70px;
+	background: #F7F7F7;
+	border:1px solid silver;
+	font-weight: bold;
+	
+}
+.login-left{  
+	text-align: end;
+ 	line-height: 50px;
+}
+ 
+ .bottom-x{  
+  margin-left:-30px;; 
+ }
+ .form-control{
+ 	margin-left:-20px;
+ 	width:350px;
+ }
+ .form-group input{
+ 	border-radius: 0px;
+ 	height: 40px;
+ }
+.login-width{
+	width:140px; 
+	border-radius:0px; 
+	margin-left:15px;
+	background: #f7f7f7; 
+	margin-top:8px;
+	font-weight:lighter;
+	font-size:14px;
+	height: 40px;
+}
+ 
+.checkbox{ 
+	text-align: end;
+	width:393px;
+	font-size:12px;  
+}
+.form-horizontal{
+	 
+}
+.form-group {
+	line-height: 50px;
+}
+.form-group input{
+	margin-top:10px;
+}
+.checkbox a{
+	color:blue;
+}
+#inputPassword4{
+	width:200px; 
+}
+.but-register{
+	border:1px solid #4490f7;
+	width:350px;
+	margin-left:74px;
+	margin-top:20px;
+	height:50px;
+	line-height:50px;
+	border-radius: 5px;
+	color:white;
+	font-size:16px;
+	font-weight: bold;
+	background: #4490f7;
+}
+.but-register:hover{
+	opacity: 0.9;
+}
+.m-30{
+	margin-top:50px;
+}
+.phone-box{
+	width:270px;
+	height:405px;
+	border:1px solid #d1eeff;
+	background: #f5fbff;
+}
+.phone-logo{
+	 display: flex;
+	 line-height: 30px;
+	 margin-top:10px;
+	 
+}
+.phone-logo .glyphicon{
+	font-size:25px; 
+	color:blue;
+	width:30px;
+	
+}
+.reg-sms-title{
+	font-family: "微软雅黑";
+	color:#666;
+	font-weight: bold;
+	font-size:14px;
+}
+.k-b-x{
+	
+	border-bottom:1px solid silver;
+}
+.num-box{
+	font-size:13px;
+	color:#666;
+}
+.text-num{
+	color:#f18300;
+	font-size: 15px;
+	font-weight: bold;
+}
+.er-img{
+	text-align: center;
+}
+.m-20{
+	margin-top:20px;
+}
+.blue{
+	color:#7a77c8;
+	margin-top:120px;
+	text-align: center;
+}
